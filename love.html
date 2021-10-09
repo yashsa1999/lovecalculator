@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+   <link href="love.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+        <title>love calculator</title>
+</head>
+<body>
+    <header>
+        <img src="quote.jpg.jpg" alt="love quote">
+    <h1>LOVE</h1>
+    </header>
+    <p>
+        Love is a set of emotions and behaviors characterized by intimacy, passion,
+        and commitment. It involves care, closeness, protectiveness, attraction,
+         affection, and trust. Love can vary in intensity and can change over time.
+        It is associated with a range of positive emotions, including happiness, 
+         excitement, life satisfaction, and euphoria,
+         but it can also result in negative emotions such as jealousy and stress.
+    </p>
+    
+    <p>Check your love compatibility with you loving partner</p>
+    <form>
+        <label for="fname">YOUR'S NAME (DO NOT PRESS ENTER ..WRITE DOEN NAME TO NEXT)</label><br>
+        <input type= "text"  id="fname" name="fname"><br>
+        <label for ="lname">YOURS'S PARTNER NAME</label><br>
+        <input type = "text" id ="lname" name="lname">
+    </form>
+    <button onclick="percentage()">CALCULATE</button>
+    <footer>
+        <p>Disclaimer : This is only for entertainment purpose donot take it seriously</p>
+    </footer>
+    <script>
+        function percentage(){
+            var n = Math.random()*100 + 50;
+            console.log(n);
+            n = Math.floor(n);
+            if(n>100)
+            {
+                n = n - 50;
+                alert("YOUR LOVE PERCENTAGE IS  " + n);
+            }
+            else
+                 alert("YOUR LOVE PERCENTAGE IS" + n);
+        }
+    </script>
+
+
+    
+</body>
+</html>
